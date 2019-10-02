@@ -10,10 +10,8 @@ function myFunction() {
     document.getElementById("concatenate").innerHTML = sentence;
 }
 
-var a = adder(5, 5)
-document.getElementById("add").innerHTML = a
 
-function adder(x, y) {
-    return x + y;
+function theFunction(){
+    document.getElementById("text").innerHTML = "100 Dollas";
 }
 
