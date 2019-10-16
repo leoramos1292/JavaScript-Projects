@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div class="main">
+                <h2>MAKE SOME NOISE!</h2>
+                <div class="string" id="string">
+                    <input type="button" class="button" value="CLICK TO MAKE SOME NOISE!" id="btn_string" onclick="getContent();"/>
+                </div>
+            <script type="text/javascript">
+                
+                var ajax = new XMLHttpRequest();
+    
+                ajax.open('GET', 'ajax2.html');
+    
+                ajax.onreadystatechange = function() {
+                    if (ajax.readyState = 4) {
+                        document.getElementById("string").innerHTML= ajax.responseText;
+                    }
+                }
+    
+                function getContent() {
+                    ajax.send();
+                }
+            </script>
+    
+</body>
+</html>
