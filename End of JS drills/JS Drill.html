@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Drill</title>
+    </head>
+    <body>
+        <div class="form">
+            <form name="your_data" onsubmit="return validator()">
+                <label>Tell me your name</label><br>
+                <input type="text" name="name" placeholder="Type your name" value=""><br><br>
+                <label>Enter your Phone Number</label><br>
+                <input type="text" name="phone-number" placeholder="###" value=""><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    <script>
+        function validator() {
+            var name = document.forms["your_data"]["name"].value;
+            var number = document.forms["your_data"]["phone-number"].value;
+            if (name == "") {
+                alert("Write your stuff, don't mess.");
+                return false;
+            }
+            if (number == "") {
+                alert("Write your stuff, don't mess.");
+                return false;
+            }
+        }
+        </script>
+    </body>
+</html>
