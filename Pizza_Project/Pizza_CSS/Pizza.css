@@ -1,69 +1,91 @@
 body {
-    background-color: rgb(19, 107, 179);
+    background-image: url("https://i1.wp.com/www.trapperspizza.com/wp-content/uploads/2019/05/Pizza-Background.jpg?fit=1200%2C800");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+.header {
+    background-color: #AD3535;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: hidden;
+    border-radius: 0px 0px 10px 10px;
+    opacity: .95;
+}
+
+.title {
+    font-family: Lato;
     color: goldenrod;
 }
 
-h3 {
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    color: floralwhite;
+.sizeContainer {
+    background-color: #803500;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.1px solid;
+    border-radius: 10px;
+    opacity: 0.95;
 }
 
-div {
-    font-family: cursive;
-    color: honeydew;
+.sizes {
+    background-color: #AD3535;
+    width: 95%;
+    height: 90%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.tableHeader {
+    border-top: hidden;
+}
+
+.table {
+    color: white;
+}
+
+.tableItem {
+    border: hidden;
+}
+
+.pizzaSize {
+    transition: all .5s;
+    border-radius: 10px;
+}
+
+.pizzaSize:hover {
+    background-color: #828282;
 }
 
 #menuBG {
-    width: 400px;
-    height: 470px;
-    margin: 10px auto;
+    color: white;
+    background-color: #803500;
+    opacity: .95;
+    border-radius: 10px;
+    border: hidden;
 }
 
-#frmMenu {
-    width: 600px;
-    height: 200px;
-}
-
-#totalPrice {
-    width: 200px;
-    height: 190px;
-    margin:0 auto;
-    float: right;
-}
-
-.left {
-    width: 200px;
-    height: 200px;
-    float: left;
-}
-
-.right {
-    width: 200px;
-    height: 250px;
-    float: right;
-}
-
-#showText {
-    width: 200px;
-    height: 190px;
-    margin: 0px auto;
-    float: left;
-}
-
-#cart {
-    top: 0;
-    margin: 0px auto;
-    width: 400px;
-    height: 200px;
+.orderButton {
+    text-align: center;
 }
 
 #btnOrder {
-    margin: 10px 0px 0px 100px;
-    width: 100px;
-    height: 40px;
+    font-family: Lato;
+    color: white;
+    background-color: #AD3535;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border: hidden;
+    transition: all .3s;
+}
+
+#btnOrder:hover {
+    background-color: #828282;
 }
