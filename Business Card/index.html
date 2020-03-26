@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Business-card.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="Business-Card.js"></script>
+    <title>Bussiness Card Generator</title>
+</head>
+<body>
+  
+  <div>
+    <h1>Business Card Generator</h1>
+
+    <div class="form-group businessForm text-center">
+
+      <form>
+        <label for="companyNameId">Company name:</label>
+        <input class="form-control" type="text" id="companyNameId" onkeyup="companyName()"><br>
+
+        <label for="companyMessageId">Company Message:</label>
+        <input class="form-control" type="text" id="companyMessageId" onkeyup="companyMessage()" name="Company Message"><br>
+
+        <label for="backgroundColorId">Background Color:</label>
+        <input class="form-control" type="color" id="backgroundColorId" onchange="backgroundColor()">
+
+        <label for="textColorId">Text Color:</label>
+        <input class="form-control" type="color" id="textColorId" name="Text Color" onchange="textColor()">
+
+        <label for="textAlign">Text Align:</label><br>
+        <input class="btn btn-danger" type="button" id="textLeftId" onclick="textLeft()" name="Text Left" value="Text Left">
+        <input class="btn btn-danger" type="button" id="textCenterId" onclick="textCenter()" name="Text Center" value="Text Center">
+        <input class="btn btn-danger" type="button" id="textRightId" onclick="textRight()" name="Text Right" value="Text Right"><br>
+
+      
+        <label for="yourName">Your Name:</label>
+        <input class="form-control" type="text" id="yourNameId" onkeyup="yourName()" name="Your Name"><br>
+
+        <label for="jobTitle">Job Title:</label>
+        <input class="form-control" type="text" id="jobTitleId" onkeyup="jobTitle()" name="Job Title"><br>
+        
+        <label for="email">Email:</label>
+        <input class="form-control" type="email" id="emailId" onkeyup="email()" name="Email"><br>
+        
+        <label for="phoneNumber">Phone Number:</label>
+        <input class="form-control" type="text" id="phoneNumberId" onkeyup="phoneNumber()" name="Phone Number"><br>
+        
+        <button class="btn btn-danger" type="submit" onclick="submitButton()">Submit</button>
+        <button class="btn btn-danger" type="button" onclick="reset()">Clear</button>
+      </form>
+
+    </div>
+
+    <div id="card" class="cardDisplay">
+      <div id="cardText">  
+        <h2 id="companyNameDisplay">Company Name</h2>
+        <p id="messageDisplay">Company Message</p>
+        <hr>
+        <p id="nameDisplay">Your Name</p>
+        <p id="jobDisplay">Job Title</p>
+        <p id="emailDisplay">Email:</p>
+        <p id="numberDisplay">Phone Number:</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
